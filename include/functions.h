@@ -7,6 +7,7 @@ char int_to_char(int digit);
 int convert_to_decimal(int number, int initial_base);
 char *convert_to_base(int decimal_number, int final_base);
 void reverse_number(char *tab);
+void copy_table(char *tab1, char *tab2);
 
 // Fonctions de vérification
 int valid_digit_in_base(int digit, int initial_base);

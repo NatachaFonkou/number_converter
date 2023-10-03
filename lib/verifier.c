@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "../include/functions.h"
 
 // Ensemble de fonctions qui vérifie les conditions pour pouvoir réaliser la division
 

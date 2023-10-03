@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "../include/functions.h"
 
 // Fonction pour convertir un caractère en nombre (par ex., '0' -> 0, '1' -> 1, ..., 'A' -> 10, 'B' -> 11, ...)
 int char_to_int(char c)
@@ -76,8 +76,6 @@ char *convert_to_base(int decimal_number, int final_base)
         index++;
     }
 
-    final_number[index] = '\0';
-
     reverse_number(final_number);
 
     return final_number;
@@ -94,4 +92,15 @@ void reverse_number(char *tab)
         tab[i] = tab[length - 1 - i];
         tab[length - 1 - i] = temp;
     }
+}
+
+void copy_table(char *tab1, char *tab2) {
+    int i = 0;
+
+    while (tab2[i] != '\0') {
+        tab1[i] = tab2[i];
+        i++;
+    }
+
+    tab1[i] = '\0';
 }
